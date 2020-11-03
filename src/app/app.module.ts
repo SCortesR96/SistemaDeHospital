@@ -11,7 +11,12 @@ import { RegisterComponent } from './login/register.component';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
+
+// Temporal
 import { FormsModule } from '@angular/forms';
+
+// Services
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,7 @@ import { FormsModule } from '@angular/forms';
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
